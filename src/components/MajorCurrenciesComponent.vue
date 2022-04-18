@@ -85,7 +85,7 @@ export default {
     },
     price(value) {
       return (
-        "R$" +
+        "R$ " +
         value.toLocaleString("pt-BR", {
           currency: "BRL",
         })
