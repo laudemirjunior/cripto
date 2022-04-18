@@ -22,6 +22,6 @@ export default {
 
 <style scoped>
 .container {
-  @apply flex w-11/12 m-auto gap-4 max-w-screen-2xl flex-col md:flex-row;
+  @apply flex w-11/12 m-auto gap-4 flex-col md:flex-row;
 }
 </style>

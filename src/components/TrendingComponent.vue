@@ -40,7 +40,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .main {
   @apply flex flex-col gap-4 w-full;
 }

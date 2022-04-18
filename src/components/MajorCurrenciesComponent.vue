@@ -32,7 +32,6 @@
     </div>
     <ChartCoinComponent :chartCoin="chartCoin" />
   </div>
-
   <ModalComponent v-if="showModal" :close="close" :coin="coin" />
 </template>
 

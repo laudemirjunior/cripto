@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="main">
+  <div class="container-modal">
+    <div class="main-modal">
       <form class="flex gap-2 flex-col" @submit.prevent="convertForUnix">
         <h1 class="">{{ coin }}</h1>
         <div class="flex justify-between">
@@ -14,7 +14,7 @@
         </div>
       </form>
 
-      <div class="button">
+      <div class="button-modal">
         <button class="btn-primary" @click="close">Fechar</button>
         <div v-if="this.coinDate.prices">
           <p>
@@ -80,13 +80,13 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.container-modal {
   @apply bg-gray-500 bg-opacity-75 transition-opacity w-full min-h-full fixed top-0 left-0 flex justify-center items-center;
 }
-.main {
+.main-modal {
   @apply bg-white h-60 flex flex-col justify-center p-4 m-4 border border-purple-700 rounded-lg gap-10 w-96 relative;
 }
-.button {
+.button-modal {
   @apply w-full flex flex-row-reverse justify-between;
 }
 </style>
